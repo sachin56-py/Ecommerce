@@ -8,3 +8,10 @@ class Profile(BaseModel):
     is_email_verified = models.BooleanField(default=False)
     email_token = models.CharField(max_length=100, blank=True)
     profile_image = models.ImageField(upload_to="profile")
+
+
+class userDetails(BaseModel):
+    username = models.CharField(max_length=200, unique=True)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=200)
+

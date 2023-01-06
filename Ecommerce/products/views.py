@@ -8,3 +8,15 @@ def home(request):
 def contact(request):
     return render(request, 'contact.html')
 
+
+def cart(request):
+    return render(request, "cart.html")
+
+
+def home(request):
+    return render(request, "index.html")
+
+
+def checkout(request):
+    return render(request, 'checkout.html')
+

@@ -14,4 +14,6 @@ class userDetails(BaseModel):
     username = models.CharField(max_length=200, unique=True)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=200)
+    contact = models.CharField(max_length=100)
+     
 
